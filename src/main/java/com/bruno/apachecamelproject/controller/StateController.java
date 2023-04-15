@@ -16,9 +16,9 @@ public class StateController {
 
     private StateService service;
 
-    @GetMapping("/{chave}")
-    public Map<String, String> getAll(@PathVariable String chave){
-        return service.getAll(chave);
+    @GetMapping("/{key}")
+    public Map<String, String> getAll(@PathVariable String key){
+        return service.getAll(key);
     }
 
 }

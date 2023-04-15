@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface StateRepository {
 
-    List<StateDto> getStates() throws IOException, InterruptedException;
+    List<StateDto> getAllStates() throws IOException, InterruptedException;
+
+    List<StateDto> getStatesByRegionCode(String key) throws IOException, InterruptedException;
 
 }
